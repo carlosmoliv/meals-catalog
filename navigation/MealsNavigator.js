@@ -8,10 +8,12 @@ import { Platform } from "react-native";
 
 const MealsNavigator = createStackNavigator(
   {
-    Categories: CategoriesScreen,
+    Categories: {
+      screen: CategoriesScreen,
+      navigationOptions: { headerTitle: "Meal Categories" },
+    },
     CategoryMeals: {
       screen: CategoryMealsScreen,
-      navigationOptions: { headerTitle: "Meal Categories" },
     },
     MealDetail: MealDetailScreen,
   },
