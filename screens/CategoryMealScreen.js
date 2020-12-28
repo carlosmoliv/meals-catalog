@@ -9,7 +9,10 @@ const CategoryMealScreen = (props) => {
       <MealItem
         itemData={data.item}
         onSelectMeal={() => {
-          console.log("Test");
+          props.navigation.navigate({
+            routeName: "MealDetail",
+            params: { mealId: data.item.id },
+          });
         }}
       />
     );

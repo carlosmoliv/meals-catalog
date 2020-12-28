@@ -15,7 +15,7 @@ const MealItem = (props) => {
   // }
 
   const { ...data } = props.itemData;
-  console.log(data.imageUrl);
+
   return (
     <View style={styles.mealItem}>
       <TouchableOpacity onPress={props.onSelectMeal}>
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5f5f5",
     borderRadius: 10,
     overflow: "hidden",
+    marginVertical: 10,
   },
   mealRow: {
     flexDirection: "row",
