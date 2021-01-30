@@ -1,4 +1,4 @@
-import MEALS from "../../data/dummy-data";
+import { MEALS } from "../../data/dummy-data";
 
 initialState = {
   meals: MEALS,
